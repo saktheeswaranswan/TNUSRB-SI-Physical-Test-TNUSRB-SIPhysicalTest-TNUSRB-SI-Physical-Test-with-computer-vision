@@ -2,7 +2,7 @@
 TNUSRB SI Physical Test 2023 - Know Physical Standards and Physical Efficiency Requirements
 there are lots of correction so developers are invited to refine the code
 reference not only tami nadu all over india
-
+https://github.com/saktheeswaranswan/Singam-police-singam-police-singampolice-self-defence-to-be-a-strict-singam-police
 https://github.com/abhishekq61/abhishekq61.github.io
 
 Fight self defence dataset yolo
