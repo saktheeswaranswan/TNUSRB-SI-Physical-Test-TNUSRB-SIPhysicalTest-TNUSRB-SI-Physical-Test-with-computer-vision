@@ -24,7 +24,7 @@ with open('pose_nodes.csv', 'r') as file:
         pose_nodes.append(row[1])
 
 # OpenCV setup
-cap = cv2.VideoCapture(0)  # Video capture from default camera (change if necessary)
+cap = cv2.VideoCapture("gymsitups.mp4")  # Video capture from default camera (change if necessary)
 
 while cap.isOpened():
     success, image = cap.read()

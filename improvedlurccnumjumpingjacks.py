@@ -23,6 +23,14 @@ exercise_count = 0
 # OpenCV setup
 cap = cv2.VideoCapture("gymsitups.mp4")  # Video capture from default camera (change if necessary)
 
+# Set desired screen resolution
+screen_width = 1280
+screen_height = 720
+
+# Set video capture resolution
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, screen_width)
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, screen_height)
+
 while cap.isOpened():
     success, image = cap.read()
     if not success:
@@ -56,13 +64,11 @@ while cap.isOpened():
 
                 # Draw the landmark and number on the image
                 cv2.circle(annotated_image, (cx, cy), 5, (0, 0, 255), -1)
-                cv2.putText(annotated_image, str(exercise_count), (cx, cy), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2,
-                            cv2.LINE_AA)
+                cv2.putText(annotated_image, str(exercise_count), (cx, cy), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2, cv2.LINE_AA)
             else:
                 # Draw other pose estimation landmarks
                 cv2.circle(annotated_image, (cx, cy), 2, (0, 255, 0), -1)
-                cv2.putText(annotated_image, str(idx), (cx, cy), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1,
-                            cv2.LINE_AA)
+                cv2.putText(annotated_image, str(idx), (cx, cy), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1, cv2.LINE_AA)
 
         # Display the exercise count
         cv2.putText(annotated_image, f"Exercise Count: {exercise_count}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2, cv2.LINE_AA)

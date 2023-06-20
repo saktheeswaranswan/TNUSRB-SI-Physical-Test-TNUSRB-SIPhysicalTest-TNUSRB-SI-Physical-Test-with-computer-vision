@@ -31,7 +31,7 @@ def count_exercises(landmarks):
     return exercise_count
 
 # OpenCV setup
-cap = cv2.VideoCapture(2)  # Video capture from default camera (change if necessary)
+cap = cv2.VideoCapture(0)  # Video capture from default camera (change if necessary)
 
 while cap.isOpened():
     success, image = cap.read()
