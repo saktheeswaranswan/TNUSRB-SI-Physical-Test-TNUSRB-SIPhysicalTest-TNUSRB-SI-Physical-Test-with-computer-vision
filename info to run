@@ -1,0 +1,37 @@
+To run the provided C++ code for YOLOv3-tiny object detection, follow these steps:
+
+Set up the environment:
+
+Make sure you have C++ development tools installed on your system.
+Install OpenCV library and configure it properly.
+Save the code: Copy the code provided in the previous response and save it to a file, e.g., yolov3_tiny_detection.cpp.
+
+Download the necessary files:
+
+Download the YOLOv3-tiny weights file (yolov3-tiny.weights), configuration file (yolov3-tiny.cfg), and the COCO class names file (coco.names) and place them in the same directory as the C++ code file (yolov3_tiny_detection.cpp).
+Build the code:
+
+Open a terminal or command prompt and navigate to the directory where you saved the code file and the downloaded files.
+Compile the code using the following command:
+css
+Copy code
+g++ yolov3_tiny_detection.cpp -o yolov3_tiny_detection `pkg-config --cflags --libs opencv4`
+Make sure to adjust the pkg-config command if you have a different version of OpenCV installed or if you are using a different package manager.
+Run the code:
+
+After a successful compilation, run the code using the following command:
+bash
+Copy code
+./yolov3_tiny_detection
+Observe the output:
+
+The code will open a window showing the live camera feed with bounding boxes and class labels for detected objects.
+Detected objects will be saved as separate images in the same directory as the code.
+The detection details with timestamps will be appended to the detections.csv file.
+Note: Ensure that your system has a camera connected and accessible to capture video frames. Adjust the code if you want to use a different video source (e.g., a video file) by modifying the cv::VideoCapture initialization.
+
+g++ yolov3_tiny_detection.cpp -o yolov3_tiny_detection `pkg-config --cflags --libs opencv4`
+
+
+./yolov3_tiny_detection
+
