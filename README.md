@@ -6,6 +6,22 @@ https://github.com/saktheeswaranswan/Singam-police-singam-police-singampolice-se
 https://github.com/abhishekq61/abhishekq61.github.io
 
 Fight self defence dataset yolo
+tr 1 chola oath
+https://www.mediafire.com/folder/v9aygnv05c704/knifee_weights
+
+
+https://www.mediafire.com/file/s1or15qluqs1l6a/knifebestb.pt/file
+tr 1 chola oath
+https://www.mediafire.com/folder/v9aygnv05c704/knifee_weights
+
+
+https://www.mediafire.com/file/s1or15qluqs1l6a/knifebestb.pt/file
+
+tr 1 chola oath
+https://www.mediafire.com/folder/v9aygnv05c704/knifee_weights
+
+
+https://www.mediafire.com/file/s1or15qluqs1l6a/knifebestb.pt/file
 
  https://universe.roboflow.com/sym-ouszq/stabbing_knife_deploy
  https://universe.roboflow.com/volkovilya064-gmail-com/knifedetection-tvaxp
